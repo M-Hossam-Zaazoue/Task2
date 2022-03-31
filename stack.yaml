@@ -1,0 +1,18 @@
+version: '3.1'
+
+services:
+
+  webserver:
+    image: m0hossam0zaazoue/webserver
+    ports:
+      - 8000:80
+
+  db:
+    image: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: Pa$$w.rd
+
+  adminer:
+    image: adminer
+    ports:
+      - 8080:8080  
